@@ -11,3 +11,18 @@ html,body{
   height: 100%;
   place-items: center;
 }
+.text{
+  font-size: 150px;
+  font-weight: 800;
+  text-transform: uppercase;
+  animation: animate 10s linear infinite;
+  background-size: 400%;
+  background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #533cf 100%);
+}
+@Keyframes animate {
+  100% {
+    background-position: 400%;
+  }
+}
+
+  
