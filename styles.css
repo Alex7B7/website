@@ -6,3 +6,8 @@ h6 {
   color: navy;
   margin-left: 20px;
 }
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+}
