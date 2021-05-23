@@ -1,10 +1,12 @@
 body {
-  background-color: lightblue;
+  background-color: gray;
 }
 
 h1 {
-  color: red;
-  margin-left: 20px;
+  padding: 80px; 
+  text-align: center; 
+  background: #1abc9c; 
+  color: white; 
 }
 html,body{
   display: grid;
