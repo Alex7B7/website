@@ -11,18 +11,31 @@ html,body{
   height: 100%;
   place-items: center;
 }
-.text{
-  font-size: 150px;
-  font-weight: 800;
-  text-transform: uppercase;
-  animation: animate 10s linear infinite;
-  background-size: 400%;
-  background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #533cf 100%);
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
 }
-@Keyframes animate {
-  100% {
-    background-position: 400%;
-  }
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
 }
 
   
