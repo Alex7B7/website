@@ -53,8 +53,6 @@ body {
 .row {  
   display: -ms-flexbox; /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
 }
 
 /* Create two unequal columns that sits next to each other */
