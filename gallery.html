@@ -38,31 +38,21 @@
 
   </div>
   <div class="main">
-  <div class="galleryinfo">
-   <h1>
-    Here is the gallery with meaningless screenshots i made.
-   </h1>
-   <h1>
-       If you want your epic screenshot to be here join the discord and ask
-   </h1>
-    </div>
-      <img src="https://steamuserimages-a.akamaihd.net/ugc/1780590127822761663/B93D20BAEE5746B6F3ED0A8996DA49C17E3A2515/" width="1000" height="500">
-      <h2>78</h2>
-      <img src="https://steamuserimages-a.akamaihd.net/ugc/1714157727301197929/8FDF942FE74E0FD09D085417BBE6B62DA4CE75F3/" width="1000" height="500">
-      <img src="https://steamuserimages-a.akamaihd.net/ugc/1284038444659866353/7E34D7CC151A2CB7A1CA91A44EFA4CEBCA1C981C/" width="1000" height="500">
-      <img src="https://steamuserimages-a.akamaihd.net/ugc/1753560003748296682/428B20161D983C7EF8E70A550B69A971D73CF4ED/" width="1000" height="500">
-      <img src="https://steamuserimages-a.akamaihd.net/ugc/1645461889798493817/7AED6A80F5CA7793B6F73D78BF50BD91B4BDF7D6/" width="1000" height="500">
-      <img src="https://steamuserimages-a.akamaihd.net/ugc/1771580432398344294/E4E562087A27EDD5EBFADD774E5B20897FE60DCD/" width="1000" height="500">
-      <img src="https://steamuserimages-a.akamaihd.net/ugc/1749061746124701713/F87E79B9C0715568122F18F96B65E5D4B8200606/" width="1000" height="500">
-      <img src="https://steamuserimages-a.akamaihd.net/ugc/1780590169129190970/B9A370CEE4EA7C453D80B3981D2EE7398385CFA1/" width="1000" height="500">
-    <h2></h2>
-    <h5></h5>
-  </div>
+	<ul id="galerie">
+		<li><button tabindex="1"><img src="https://steamuserimages-a.akamaihd.net/ugc/1780590127822761663/B93D20BAEE5746B6F3ED0A8996DA49C17E3A2515/">
+			</button></li>
+		
+		<li><button tabindex="1"><img src="https://steamuserimages-a.akamaihd.net/ugc/1714157727301197929/8FDF942FE74E0FD09D085417BBE6B62DA4CE75F3/">
+			</button></li>
+		
+<li><button tabindex="1"><img src="https://steamuserimages-a.akamaihd.net/ugc/1780590169129190970/B9A370CEE4EA7C453D80B3981D2EE7398385CFA1/">
+			</button></li>
+		
+
+	</ul>
 </div>
 
-<div class="footer">
-  <h2>1957©</h2>
-</div>
+
 
 </body>
 </html>
@@ -157,8 +147,8 @@ body {
 
 /* Footer */
 .footer {
-  padding: 20px;
-  text-align: center;
+  padding: 2px;
+  text-align: bottom;
   background: #ddd;
 }
 
@@ -188,6 +178,63 @@ body {
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #aaa;
+}
+ul,
+li {
+	margin: 0.1em;
+	padding: 0.1em;
+}
+
+li {
+	display: inline-block;
+	list-style-type: none;
+	width: 45%;
+}
+
+img {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	/* Bild passt sich an verfügbaren Raum im li ann */
+}
+
+button {
+	padding: 0.1em;
+}
+/* Large screens */
+
+@media all and (min-width: 35em) {
+	li {
+		width: 10em;
+	}
+	button {
+		padding: 0.1em;
+		width: 10em;
+		height: 6em;
+		position: relative;
+	}
+	button img {
+		border: 0;
+		position: absolute;
+		left: 0%;
+		top: 0%;
+		z-index: 1;
+		box-shadow: 0;
+		width: 10em;
+		transition: all 1s;
+	}
+	button:focus img,
+	button:hover img {
+		border: 2em solid #eee;
+		border-radius: 1em;
+		position: absolute;
+		left: -4%;
+		top: -4%;
+		width: 300%;
+		z-index: 5;
+		box-shadow: 1px 1px 5px #333;
+		transition: all 1s;
+	}
 }
 
 </style>
