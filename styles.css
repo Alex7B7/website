@@ -79,10 +79,17 @@ body {
   padding: 20px;
 }
 
+.galleryinfo{
+ background-color: #adf;
+ width: 77%;
+ padding: 20px;
+}
+
+
 /* Footer */
 .footer {
-  padding: 20px;
-  text-align: center;
+  padding: 2px;
+  text-align: bottom;
   background: #ddd;
 }
 
@@ -100,4 +107,75 @@ body {
     width: 100%;
   }
 }
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  background: #b52626;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #aaa;
+}
+ul,
+li {
+	margin: 2.1em;
+	padding: 0.1em;
+}
+
+li {
+	display: inline-block;
+	list-style-type: none;
+	width: 45%;
+}
+
+img {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	/* Bild passt sich an verfügbaren Raum im li ann */
+}
+
+button {
+	padding: 0.1em;
+}
+/* Large screens */
+
+@media all and (min-width: 35em) {
+	li {
+		width: 10em;
+	}
+	button {
+		padding: 0.1em;
+		width: 12.5em;
+		height: 7.3em;
+		position: relative;
+	}
+	button img {
+		border: 0;
+		position: absolute;
+		left: 0%;
+		top: 0%;
+		z-index: 1;
+		box-shadow: 0;
+		width: 12em;
+		transition: all 1s;
+	}
+	button:focus img,
+	button:hover img {
+		border: 2em solid #eee;
+		border-radius: 1em;
+		position: absolute;
+		left: -300%;
+		top: -300%;
+		width: 400%;
+		z-index: 5;
+		box-shadow: 1px 1px 5px #333;
+		transition: all 1s;
+	}
+}
+
 </style>
