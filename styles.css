@@ -64,6 +64,15 @@ body {
   padding: 20px;
 }
 
+.ad {
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 160px;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 3px;
+}
+
 /* Main column */
 .main {   
   -ms-flex: 70%; /* IE10 */
